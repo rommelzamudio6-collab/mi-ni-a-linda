@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Niña 💗</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music/mykindofwoman.mp3" type="audio/mpeg">
+    </audio>
+
+    <header class="top-bar">
+        <span class="badge">💗 Inicio</span>
+        <span class="badge">💗 Contador</span>
+        <button id="musicBtn" class="badge music-toggle">
+            <span id="musicText">💘 Pausado</span>
+        </button>
+    </header>
+
+    <div id="welcomeScreen" class="card-container">
+        <div class="card">
+            <h1 class="title">Para mi niña 💗</h1>
+            <p class="quote">
+                Hay personas que llegan para cambiarte la vida...<br>
+                <em>y luego estás tú.</em>
+            </p>
+            <button id="openBtn" class="main-btn">💘 Abrir</button>
+        </div>
+    </div>
+
+    <div id="mainContent" class="main-content hidden">
+        
+        <section class="section">
+            <h2>Nuestra Historia 💌</h2>
+            <p>Cada momento a tu lado ha sido mágico. Gracias por ser mi lugar seguro y mi persona favorita.</p>
+        </section>
+
+        <section class="section counter-section">
+            <h2>Tiempo Juntos ⏳</h2>
+            <div class="counter-grid">
+                <div class="time-box"><span id="days">0</span><p>Días</p></div>
+                <div class="time-box"><span id="hours">0</span><p>Horas</p></div>
+                <div class="time-box"><span id="minutes">0</span><p>Minutos</p></div>
+                <div class="time-box"><span id="seconds">0</span><p>Segundos</p></div>
+            </div>
+        </section>
+
+        <section class="section gallery-section">
+            <h2>Nuestros Momentos 📸</h2>
+            <div class="gallery-grid">
+                <img src="images/foto1.jpg" alt="Foto 1" onerror="this.src='https://via.placeholder.com/150?text=Foto+1'">
+                <img src="images/foto2.jpg" alt="Foto 2" onerror="this.src='https://via.placeholder.com/150?text=Foto+2'">
+                <img src="images/foto3.jpg" alt="Foto 3" onerror="this.src='https://via.placeholder.com/150?text=Foto+3'">
+                <img src="images/foto4.jpg" alt="Foto 4" onerror="this.src='https://via.placeholder.com/150?text=Foto+4'">
+                <img src="images/foto5.jpg" alt="Foto 5" onerror="this.src='https://via.placeholder.com/150?text=Foto+5'">
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Hecho con mucho amor para ti 💖</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
